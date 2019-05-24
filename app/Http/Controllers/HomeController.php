@@ -3,6 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Product;
+use DB;
+use App\Productimages;
+use App\Productcategories;
+use App\Categoriesdetail;
+use App\Discount;
+use App\AdminNotif;
 
 class HomeController extends Controller
 {
@@ -11,10 +18,10 @@ class HomeController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+    // public function __construct()
+    // {
+    //     $this->middleware('auth');
+    // }
 
     /**
      * Show the application dashboard.
@@ -23,6 +30,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $produk = Product::all();
+        $kategori = Productcategories::all();
+        // $allNotif = AdminNotif::all();
+        // $count = sizeof($allNotif);
+        $notif = UserNotif::where('read_at',NULL)->get();
+        // return compact('notif','allNotif');
+        // return $notif;
+        return view('user.home',compact('produk','kategori','notif'));
     }
 }

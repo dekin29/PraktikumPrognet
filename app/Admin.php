@@ -5,6 +5,7 @@ namespace App;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use App\AdminNotif;
 
 class Admin extends Authenticatable
 {
@@ -29,4 +30,10 @@ class Admin extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function notifications()
+    {
+        return $this->morphMany(AdminNotif::class, 'notifiable')
+                    ->orderBy('created_at','desc');
+    }
 }

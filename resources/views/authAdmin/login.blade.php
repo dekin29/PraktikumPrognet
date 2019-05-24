@@ -1,73 +1,99 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login Admin') }}</div>
+<!-- Mirrored from spruko.com/demo/adon/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Jan 2019 08:59:19 GMT -->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Fully Responsive Bootstrap 4 Admin Dashboard Template">
+	<meta name="author" content="Creative Tim">
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('admin.login.submit') }}">
-                        @csrf
+	<!-- Title -->
+	<title>Login Admin</title>
 
-                        <div class="form-group row">
-                            <label for="username" class="col-md-4 col-form-label text-md-right">{{ __('Username') }}</label>
+	<!-- Favicon -->
+	<link href="{{asset("assets/img/brand/favicon.png")}}" rel="icon" type="image/png">
 
-                            <div class="col-md-6">
-                                <input id="username" type="text" class="form-control{{ $errors->has('username') ? ' is-invalid' : '' }}" name="username" value="{{ old('username') }}" required autofocus>
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800" rel="stylesheet">
 
-                                @if ($errors->has('username'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('username') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
+	<!-- Icons -->
+	<link href="{{URL::asset("assets/css/icons.css")}}" rel="stylesheet">
 
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
+	<!--Bootstrap.min css-->
+	<link rel="stylesheet" href="{{URL::asset("assets/plugins/bootstrap/css/bootstrap.min.css")}}">
 
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+	<!-- Adon CSS -->
+	<link href="{{URL::asset("assets/css/dashboard.css")}}" rel="stylesheet" type="text/css">
 
-                                @if ($errors->has('password'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
+	<!-- Single-page CSS -->
+	<link href="{{URL::asset("assets/plugins/single-page/css/main.css")}}" rel="stylesheet" type="text/css">
 
-                        <div class="form-group row">
-                            <div class="col-md-6 offset-md-4">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+</head>
 
-                                    <label class="form-check-label" for="remember">
-                                        {{ __('Remember Me') }}
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
+<body class="bg-gradient-primary">
+	<div class="limiter">
+		<div class="container-login100">
+				
+			<div class="wrap-login100 p-5">
+				<form class="login100-form validate-form" method="POST" action="{{ route('admin.login.submit') }}">
+					@csrf
+					{{-- <div class="logo-img text-center pb-3">
+						<img src="{{asset('assets/img/brand/logo-dark1.png')}}" alt="logo-img">
+					</div> --}}
+					<span class="login100-form-title">
+						Admin Login
+					</span>
 
-                        <div class="form-group row mb-0">
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Login') }}
-                                </button>
+					<div class="wrap-input100 validate-input" data-validate = "Username is required">
+						<input class="input100" type="text" name="username" placeholder="Username">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fas fa-user-alt" aria-hidden="true"></i>
+						</span>
+					</div>
 
-                                @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
-                                    </a>
-                                @endif
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-@endsection
+					<div class="wrap-input100 validate-input" data-validate = "Password is required">
+						<input class="input100" type="password" name="password" placeholder="Password">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn btn-primary" style="color: white;">Login</button>
+					</div>
+
+					
+
+					<div class="text-center pt-2">
+						<span class="txt1">
+							Forgot
+						</span>
+						<a class="txt2" href="forgot.html">
+							Username / Password?
+						</a>
+					</div>
+
+					<div class="text-center pt-1">
+						<a class="txt2" href="register.html">
+							Create your Account
+							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- Adon Scripts -->
+	<!-- Core -->
+	<script src="assets/plugins/jquery/dist/jquery.min.js"></script>
+	<script src="assets/js/popper.js"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+<!-- Mirrored from spruko.com/demo/adon/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Jan 2019 08:59:19 GMT -->
+</html>
