@@ -18,10 +18,10 @@ class HomeController extends Controller
      *
      * @return void
      */
-    // public function __construct()
-    // {
-    //     $this->middleware('auth');
-    // }
+    public function __construct()
+    {
+        $this->middleware(['auth','verified']);
+    }
 
     /**
      * Show the application dashboard.
@@ -34,9 +34,8 @@ class HomeController extends Controller
         $kategori = Productcategories::all();
         // $allNotif = AdminNotif::all();
         // $count = sizeof($allNotif);
-        $notif = UserNotif::where('read_at',NULL)->get();
         // return compact('notif','allNotif');
         // return $notif;
-        return view('user.home',compact('produk','kategori','notif'));
+        return view('user.home',compact('produk','kategori'));
     }
 }

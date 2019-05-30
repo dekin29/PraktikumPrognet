@@ -1,77 +1,77 @@
-@extends('layouts.app')
-
+@section('title', 'Login')
+@extends('layouts.userLayout')
+@section('add_css')
+@stop
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
-
-                <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
-                        @csrf
-
-                        <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
-
-                                @if ($errors->has('name'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('name') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
+    <!-- site__body -->
+    <div class="site__body">
+        <!-- page -->
+        <div class="page">
+            <!-- page__header -->
+            <div class="page__header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <ol class="page__header-breadcrumbs breadcrumb">
+                                {{-- <li class="breadcrumb-item">
+                                    <a href="index-2.html">Home</a>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <a href="#">Furniture</a>
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">Current Page</li> --}}
+                            </ol>
+                            <h1 class="page__header-title decor-header decor-header--align--center">Register Account</h1>
                         </div>
-
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
-
-                                @if ($errors->has('email'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
-
-                                @if ($errors->has('password'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
-                                </button>
-                            </div>
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
+            <!-- page__header / end -->
+            <!-- page__body -->
+            <div class="page__body">
+                <div class="block">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 d-flex">
+                            </div>
+                            <div class="col-md-6 d-flex">
+                                <div class="card flex-grow-1 mb-0">
+                                    <div class="card__header">
+                                        <h4 class="decor-header">Register</h4>
+                                    </div>
+                                    <div class="card__content">
+                                        <form method="POST" action="{{ route('register') }}">
+                                            @csrf
+                                            <div class="form-group">
+                                                <label>Name</label> 
+                                                <input id="name" name="name" type="text" class="form-control" placeholder="Enter name" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Email address</label> 
+                                                <input id="email" name="email" type="email" class="form-control" placeholder="Enter email" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Password</label> 
+                                                <input id="password" name="password" type="password" class="form-control" placeholder="Password" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Repeat Password</label> 
+                                                <input id="password_confirm" name="password_confirmation" type="password" class="form-control" placeholder="Password" required>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Register</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- page__body / end -->
         </div>
+        <!-- page / end -->
     </div>
-</div>
-@endsection
+    <!-- site__body / end -->
+@stop
+@section('add_js')
+@stop

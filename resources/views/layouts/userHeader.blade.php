@@ -120,7 +120,7 @@
                 </button>
             </div>
             {{-- <div class="header__indicator" data-dropdown-trigger="click"> --}}
-            @if(!empty(Auth::user()->id))
+            @if(!empty(Auth::user()->id) and !empty(Auth::user()->email_verified_at))
                 <div class="header__indicator">
                     <a href="/myprofile" class="header__indicator-button indicator">
                         <span class="indicator__area">

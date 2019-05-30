@@ -47,7 +47,7 @@ Route::resource('/response','ResponseController');
 Route::get('/report/bulanan','ReportController@bulan');
 Route::get('/report/tahunan','ReportController@tahun');
 
-Auth::routes();
+Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/user/logout','Auth\LoginController@logoutUser')->name('user.logout');
