@@ -45,7 +45,29 @@
 											<button class="btn btn-primary btn-sm">
 												<span class="fab fa-twitter"></span> Follow
 											</button>
-											<a href="#" class="btn btn-success btn-sm"><i class="fas fa-pencil-alt" aria-hidden="true"></i> Edit profile</a>
+											<a href="#" class="btn btn-success btn-sm" data-toggle="modal" data-target="#edit-profile"><i class="fas fa-pencil-alt" aria-hidden="true"></i> Edit profile</a>
+											<div class="modal fade" id="edit-profile" tabindex="-1" role="dialog" aria-labelledby="edit-profile" aria-hidden="true">
+												<div class="modal-dialog modal- modal-dialog-centered modal-" role="document">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h2 class="modal-title" id="modal-title-default">Edit Profile</h2>
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																<span aria-hidden="true">×</span>
+															</button>
+														</div>
+														<form action="/editprofile" method="POST" enctype='multipart/form-data'>
+															{{ csrf_field() }}
+															<div class="modal-body">
+																<input name="images" type="file" class="dropify" data-height="300" />
+															</div>
+														<div class="modal-footer">
+															<button type="submit" class="btn btn-primary">Save Changes</button>
+															{{-- <button type="button" class="btn btn-link  ml-auto" data-dismiss="modal">Close</button> --}}
+														</div>
+														</form>
+													</div>
+												</div>
+											</div>
 										</div>
 										<div class="card-body">
 											<div class="nav-wrapper p-0">

@@ -27,87 +27,6 @@
                 <ul class="main-nav__list">
                     <li class="main-nav__item"><a class="main-nav__link" href="/">Home</a></li>
                     <li class="main-nav__item"><a class="main-nav__link" href="/shop">Shop</a></li>
-                    {{-- <li class="main-nav__item">
-                        <a class="main-nav__link" href="#">Shop 
-                            <svg class="main-nav__link-arrow" width="9px" height="6px">
-                                <use xlink:href="images/sprite.svg#arrow-down-9x6"></use>
-                            </svg>
-                        </a>
-                        <div class="main-nav__sub-megamenu">
-                            <!-- megamenu -->
-                            <div class="megamenu">
-                                <div class="row">
-                                    <div class="col-2">
-                                        <ul class="megamenu__links megamenu__links--root">
-                                            <li><a href="#">Living Room</a>
-                                                <ul class="megamenu__links megamenu__links--sub">
-                                                    <li><a href="#">Sofas</a></li><li><a href="#">Sectional Sofas</a></li><li><a href="#">Coffee Tables</a></li><li><a href="#">TV Stands</a></li><li><a href="#">Living Room Sets</a></li></ul></li><li><a href="#">Bedroom</a><ul class="megamenu__links megamenu__links--sub"><li><a href="#">Beds</a></li><li><a href="#">Headboards</a></li><li><a href="#">Nightstands</a></li><li><a href="#">Dressers</a></li><li><a href="#">Mirrored Dressers</a></li><li><a href="#">Chest of Drawers</a></li></ul></li></ul></div><div class="col-2"><ul class="megamenu__links megamenu__links--root"><li><a href="#">Accent Furniture</a><ul class="megamenu__links megamenu__links--sub"><li><a href="#">Accent Chairs</a></li><li><a href="#">Accent Tables</a></li><li><a href="#">End and Side Tables</a></li><li><a href="#">Console Tables</a></li><li><a href="#">Accent Cabinets</a></li><li><a href="#">Benches</a></li><li><a href="#">Bar Cart</a></li></ul></li><li><a href="#">Home Office</a><ul class="megamenu__links megamenu__links--sub"><li><a href="#">Desks</a></li><li><a href="#">Office Chairs</a></li><li><a href="#">Bookcases</a></li><li><a href="#">Office Storage</a></li></ul></li></ul></div><div class="col-2"><ul class="megamenu__links megamenu__links--root"><li><a href="#">Kitchen &amp; Dining</a><ul class="megamenu__links megamenu__links--sub"><li><a href="#">Tables</a></li><li><a href="#">Chairs</a></li><li><a href="#">Bar Stools</a></li><li><a href="#">Benches</a></li><li><a href="#">Storage</a></li><li><a href="#">Bar Furniture</a></li><li><a href="#">Sets</a></li></ul></li><li><a href="#">Bathroom</a><ul class="megamenu__links megamenu__links--sub"><li><a href="#">Vanities</a></li><li><a href="#">Storage</a></li><li><a href="#">Mirrors</a></li><li><a href="#">Vanity Lighting</a></li></ul></li></ul></div><div class="col-2"><ul class="megamenu__links megamenu__links--root"><li><a href="#">Mattresses</a><ul class="megamenu__links megamenu__links--sub"><li><a href="#">Memory Foam</a></li><li><a href="#">Innerspring</a></li><li><a href="#">Hybrid</a></li><li><a href="#">Power Bases</a></li><li><a href="#">Shop All Mattresses</a></li></ul></li><li><a href="#">Kids</a><ul class="megamenu__links megamenu__links--sub"><li><a href="#">Bedroom Sets</a></li><li><a href="#">Headboards</a></li><li><a href="#">Nightstands</a></li><li><a href="#">Dressers</a></li><li><a href="#">Playroom</a></li><li><a href="#">Tables and Chairs</a></li></ul></li></ul></div><div class="col-4"><a href="#" class="megamenu__banner"><img srcset="images/banners/megamenu-banner.jpg, images/banners/megamenu-banner@2x.jpg 2x" src="images/banners/megamenu-banner.jpg" alt=""></a></div></div></div>
-                            <!-- megamenu / end -->
-                        </div>
-                    </li> --}}
-                    {{-- <li class="main-nav__item main-nav__item--with--menu">
-                        <a class="main-nav__link" href="shop-grid.html">Shop 
-                            <svg class="main-nav__link-arrow" width="9px" height="6px">
-                                <use xlink:href="images/sprite.svg#arrow-down-9x6">
-                                </use>
-                            </svg>
-                        </a>
-                        <div class="main-nav__sub-menu">
-                            <ul class="menu">
-                                <li class="menu__item">
-                                    <a class="menu__link" href="shop-grid.html">Shop 
-                                        <svg class="menu__link-arrow" width="6px" height="9px"><use xlink:href="images/sprite.svg#arrow-right-6x9"></use></svg></a>
-                                    <div class="menu__sub">
-                                        <ul class="menu">
-                                            <li class="menu__item"><a class="menu__link" href="shop-grid.html">Shop Grid</a></li>
-                                            <li class="menu__item"><a class="menu__link" href="shop-full-grid-5.html">Shop Full Grid 5</a></li>
-                                            <li class="menu__item"><a class="menu__link" href="shop-list.html">Shop List</a></li>
-                                            <li class="menu__item"><a class="menu__link" href="shop-left-sidebar.html">Shop Left Sidebar</a></li>
-                                            <li class="menu__item"><a class="menu__link" href="shop-right-sidebar.html">Shop Right Sidebar</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="menu__item"><a class="menu__link" href="product.html">Product</a></li>
-                                <li class="menu__item"><a class="menu__link" href="cart.html">Cart</a></li>
-                                <li class="menu__item"><a class="menu__link" href="checkout.html">Checkout</a></li>
-                                <li class="menu__item"><a class="menu__link" href="account.html">My Account</a></li>
-                                <li class="menu__item"><a class="menu__link" href="track-order.html">Track Order</a></li>
-                                <li class="menu__item"><a class="menu__link" href="wishlist.html">Wishlist</a></li>
-                                <li class="menu__item"><a class="menu__link" href="compare.html">Compare</a></li>
-                            </ul>
-                        </div>
-                    </li> --}}
-                    {{-- <li class="main-nav__item main-nav__item--with--menu">
-                        <a class="main-nav__link" href="blog.html">Blog 
-                            <svg class="main-nav__link-arrow" width="9px" height="6px"><use xlink:href="images/sprite.svg#arrow-down-9x6"></use></svg>
-                        </a>
-                        <div class="main-nav__sub-menu">
-                            <ul class="menu">
-                                <li class="menu__item"><a class="menu__link" href="blog.html">Blog Grid</a></li>
-                                <li class="menu__item"><a class="menu__link" href="blog-list.html">Blog List</a></li>
-                                <li class="menu__item"><a class="menu__link" href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                                <li class="menu__item"><a class="menu__link" href="post.html">Post</a></li>
-                            </ul>
-                        </div>
-                    </li> --}}
-                    {{-- <li class="main-nav__item main-nav__item--with--menu">
-                        <a class="main-nav__link" href="about-us.html">Pages 
-                            <svg class="main-nav__link-arrow" width="9px" height="6px">
-                                <use xlink:href="images/sprite.svg#arrow-down-9x6"></use>
-                            </svg>
-                        </a>
-                        <div class="main-nav__sub-menu">
-                            <ul class="menu">
-                                <li class="menu__item"><a class="menu__link" href="about-us.html">About Us</a></li>
-                                <li class="menu__item"><a class="menu__link" href="contact-us.html">Contact Us</a></li>
-                                <li class="menu__item"><a class="menu__link" href="404.html">404</a></li>
-                                <li class="menu__item"><a class="menu__link" href="terms-and-conditions.html">Terms And Conditions</a></li>
-                                <li class="menu__item"><a class="menu__link" href="faq.html">FAQ</a></li>
-                                <li class="menu__item"><a class="menu__link" href="components.html">Components</a></li>
-                                <li class="menu__item"><a class="menu__link" href="typography.html">Typography</a></li>
-                            </ul>
-                        </div>
-                    </li> --}}
                     <li class="main-nav__item"><a class="main-nav__link" href="contact-us.html">About Us</a></li>
                 </ul>
             </nav>
@@ -128,102 +47,59 @@
                         </span>
                     </a>
                 </div>   
-                <div class="header__indicator">
-                    <a href="/cart" class="header__indicator-button indicator">
-                        <span class="indicator__area">            
-                            <span class="indicator__value">    
-                                {{'3'}}    
-                            </span> 
-                            <i class="fas fa-shopping-cart"></i>
-                        </span>
-                    </a>
-                    {{-- <div class="header__indicator-dropdown">
-                        <div class="dropcart">
-                            <div class="dropcart__products-list">
-                                <div class="dropcart__product">
-                                    <div class="dropcart__product-image">
-                                        <a href="product.html">
-                                            <img srcset="images/products/product1-1.jpg, images/products/product1-1@2x.jpg 2x" src="images/products/product1-1.jpg" alt="">
-                                        </a>
+                @if(App\Cart::where('user_id',Auth::user()->id)->where('status','notyet')->count()== 0)
+                    <div class="header__indicator">
+                        <a href="/cart" class="header__indicator-button indicator">
+                            <span class="indicator__area">            
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </a>
+                    </div>
+                @else
+                    <div class="header__indicator">
+                        <a href="/cart" class="header__indicator-button indicator">
+                            <span class="indicator__area">            
+                                <span class="indicator__value">    
+                                    {{App\Cart::where('user_id',Auth::user()->id)->where('status','notyet')->count()}}    
+                                </span> 
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </a>
+                    </div>
+                @endif
+                @if(Auth::user()->unreadNotifications->count() == 0)
+                    <div class="header__indicator" data-dropdown-trigger="click">
+                            <a href="" class="header__indicator-button indicator">
+                                <span class="indicator__area">            
+                                    <i class="fas fa-bell"></i>
+                                </span>
+                            </a>
+                            <div class="header__indicator-dropdown">
+                                <div class="dropcart">
+                                    <div class="dropcart__products-list">
+                                            <div class="dropcart__product">
+                                                <div class="dropcart__product-info">
+                                                    <div class="dropcart__product-name">
+                                                        <a>No Notification</a>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="dropcart__product-remove button-remove">
+                                                    <svg width="10px" height="10px">
+                                                        <use xlink:href="images/sprite.svg#cross-10">
+                                                        </use>
+                                                    </svg>
+                                                </button>
+                                            </div>
                                     </div>
-                                    <div class="dropcart__product-info">
-                                        <div class="dropcart__product-name">
-                                            <a href="product.html">Aluminum Chandelier</a>
-                                        </div>
-                                        <ul class="dropcart__product-options">
-                                            <li>Color: Gray</li>
-                                            <li>Material: Aluminum</li>
-                                        </ul>
-                                        <div class="dropcart__product-price">1 x $249.00</div>
-                                    </div>
-                                    <button type="button" class="dropcart__product-remove button-remove">
-                                        <svg width="10px" height="10px">
-                                            <use xlink:href="images/sprite.svg#cross-10">
-                                            </use>
-                                        </svg>
-                                    </button>
-                                </div>
-                                <div class="dropcart__product">
-                                    <div class="dropcart__product-image">
-                                        <a href="product.html">
-                                            <img srcset="images/products/product3-1.jpg, images/products/product3-1@2x.jpg 2x" src="images/products/product3-1.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="dropcart__product-info">
-                                        <div class="dropcart__product-name">
-                                            <a href="product.html">Wooden Closet</a>
-                                        </div>
-                                        <ul class="dropcart__product-options">
-                                            <li>Color: Dark Brown</li>
-                                        </ul>
-                                        <div class="dropcart__product-price">3 x $439.00</div>
-                                    </div>
-                                    <button type="button" class="dropcart__product-remove button-remove">
-                                        <svg width="10px" height="10px">
-                                            <use xlink:href="images/sprite.svg#cross-10"></use>
-                                        </svg>
-                                    </button>
-                                </div>
-                                <div class="dropcart__product">
-                                    <div class="dropcart__product-image">
-                                        <a href="product.html">
-                                            <img srcset="images/products/product4-1.jpg, images/products/product4-1@2x.jpg 2x" src="images/products/product4-1.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="dropcart__product-info">
-                                        <div class="dropcart__product-name">
-                                            <a href="product.html">Monero Chair</a>
-                                        </div>
-                                        <ul class="dropcart__product-options">
-                                            <li>Color: Brown</li>
-                                        </ul>
-                                        <div class="dropcart__product-price">2 x $17.00</div>
-                                    </div>
-                                    <button type="button" class="dropcart__product-remove button-remove">
-                                        <svg width="10px" height="10px">
-                                            <use xlink:href="images/sprite.svg#cross-10"></use>
-                                        </svg>
-                                    </button>
                                 </div>
                             </div>
-                            <div class="dropcart__totals">
-                                <table>
-                                    <tbody><tr><th>Subtotal</th><td>$2,459.00</td></tr><tr><th>Shipping</th><td>Free Shipping</td></tr><tr><th>Tax</th><td>$0.00</td></tr><tr><th>Total</th><td>$2,459.00</td></tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="dropcart__buttons">
-                                <a class="btn btn-secondary" href="cart.html">View Cart</a> 
-                                <a class="btn btn-primary" href="checkout.html">Checkout</a>
-                            </div>
-                        </div>
-                    </div> --}}
-                </div>
-                <div class="header__indicator" data-dropdown-trigger="click">
+                    </div>
+                @else 
+                    <div class="header__indicator" data-dropdown-trigger="click">
                         <a href="" class="header__indicator-button indicator">
                             <span class="indicator__area">            
                                 <span class="indicator__value">    
-                                    {{'3'}}    
+                                    {{Auth::user()->unreadNotifications->count()}}    
                                 </span> 
                                 <i class="fas fa-bell"></i>
                             </span>
@@ -250,6 +126,7 @@
                             </div>
                         </div>
                     </div>
+                @endif
                 <div class="header__indicator">
                     <a href="/user/logout" class="header__indicator-button indicator">
                         <span class="indicator__area">
